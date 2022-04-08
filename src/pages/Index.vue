@@ -169,7 +169,8 @@
         padding: 30px;
     }
     .post-card__image {
-        height: 300px;
+        height: 320px;
+        width: 400px;
     }
     .grid_section {
         padding: 30px 0px 30px 0px;
@@ -230,7 +231,7 @@
                         <div class="flex flex-col md:flex-row max-w-1200 w-full mx-auto relative postslist">
                             <div :to="edge.node.path" class="w-full md:w-2/5">
                                 <div class="text-white">
-                                    <g-link class="post-card__link" :to="edge.node.path"><g-image alt="Cover image" v-if="edge.node.cover_image" class="post-card__image" :src="edge.node.cover_image" /> </g-link>
+                                    <g-link class="post-card__link" :to="edge.node.path"><g-image alt="Cover image" v-if="edge.node.thumbnail_image" class="post-card__image" :src="edge.node.thumbnail_image" /> <g-image alt="Cover image" v-else class="post-card__image" :src="edge.node.cover_image" /></g-link>
                                 </div>
                             </div>
                             <div class="w-full md:w-3/4 p-2">
@@ -324,6 +325,7 @@
     timeToRead
     description
     cover_image
+    thumbnail_image
     ...on Post {
     id
     title

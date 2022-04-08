@@ -407,7 +407,7 @@
                         <div class="flex flex-col md:flex-row max-w-1200 w-full  mx-auto relative postslist border">
                             <div :to="edge.node.path" class="w-full md:w-2/5">
                                 <div class="text-white">
-                                    <g-link class="post-card__link" :to="edge.node.path"><g-image style="height:300px;" alt="Cover image" v-if="edge.node.cover_image" class="post-card__image" :src="edge.node.cover_image" /> </g-link>
+                                    <g-link class="post-card__link" :to="edge.node.path"><g-image alt="Cover image" v-if="edge.node.thumbnail_image" class="post-card__image" :src="edge.node.thumbnail_image" /> <g-image alt="Cover image" v-else class="post-card__image" :src="edge.node.cover_image" /></g-link>
                                 </div>
                             </div>
                             <div class="w-full md:w-4/5 p-2">

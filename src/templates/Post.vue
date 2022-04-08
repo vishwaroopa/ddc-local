@@ -3,10 +3,10 @@
     margin: 0 auto;
     padding: 0 !important;
 }
-.post__content p {
-    line-height: 28px;
-    margin-bottom: 12px;
-}
+    .post__content p {
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
 
 </style>
 <template>
@@ -185,43 +185,56 @@ import BaseSection from "../components/BaseSection.vue";
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
 }
 
-.post {
+    .post {
 
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+        &__header {
+            width: calc(100% + var(--space) * 2);
+            margin-left: calc(var(--space) * -1);
+            margin-top: calc(var(--space) * -1);
+            margin-bottom: calc(var(--space) / 2);
+            overflow: hidden;
+            border-radius: var(--radius) var(--radius) 0 0;
 
-    img {
-      width: 100%;
+            img {
+                width: 100%;
+            }
+
+            &:empty {
+                display: none;
+            }
+        }
+
+        .post__content img {
+            margin: auto;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 30px !important;
+            /* padding: 0; */
+            font-size: 1.14em;
+            color: var(--title-color);
+            margin-bottom: 30px;
+        }
+
+        &__content {
+            h2:first-child {
+                margin-top: 0;
+            }
+
+            p {
+                font-size: 1.14em;
+                color: var(--title-color);
+            }
+
+            img {
+                width: calc(100% + var(--space) * 2);
+                margin-left: calc(var(--space) * -1);
+                display: block;
+                max-width: none;
+            }
+        }
     }
-
-    &:empty {
-      display: none;
-    }
-  }
-
-  &__content {
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
-
-    img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: none;
-    }
-  }
-}
 
 .post-comments {
   padding: calc(var(--space) / 2);
