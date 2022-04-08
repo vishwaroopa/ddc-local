@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yellowbrick-data/ddc
+  repo: vishwaroopa/ddc-local
   branch: main
 
 local_backend: true
