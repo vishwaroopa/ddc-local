@@ -209,6 +209,9 @@ import BaseSection from "../components/BaseSection.vue";
         .post__content img {
             margin: auto;
             max-width: 100% !important;
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 20px;
         }
 
         @media only screen and (max-width: 600px) {
