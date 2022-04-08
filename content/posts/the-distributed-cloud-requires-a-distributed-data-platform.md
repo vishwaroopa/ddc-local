@@ -26,8 +26,7 @@ with fragmentated data silos, exacerbating data integration, management, and gov
 and adding a greater degree of unpredictability related to evaluating data infrastructure cost and
 performance.
 
-<img src="/assets/static/static/images/uploads/cloud-providers.png?width=474&key=46cd505" alt="Cloud Providers for Analytics and Data" title="Cloud Providers for Analytics and Data" style="float:right;margin-left:10px;">
-
+<img src="/images/uploads/cloud-providers.png" alt="Cloud Providers for Analytics and Data" title="Cloud Providers for Analytics and Data" style="float:right;margin-left:10px;">
 
 Data storage and processing is now distributed across a complex array of private data centers, multiple public cloud computing infrastructure providers and edge devices. Almost one-half (49%) of respondents to Ventana Research’s Analytics and Data Benchmark Research are using cloud computing for analytics and data, and 42% are currently using more than one cloud provider. These cloud computing resources need to be utilized in conjunction with ongoing use of on-premises infrastructure, including centralized data centers as edge computing resources like Internet of Things (IoT) devices or servers and local data centers located close to the source of the data. 
 

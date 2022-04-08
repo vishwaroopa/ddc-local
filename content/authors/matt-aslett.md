@@ -1,7 +1,7 @@
 ---
 id: bfac0ff5-1b54-4810-87a9-551cc05b2a40
 name: Matt Aslett
-position: VP and Research Director, Ventana Research
+position: VP and Research Director
 authorImage: /uploads/authors/matt_aslett_circle_2021.png
 authorAbout: >-
   <!--StartFragment-->
