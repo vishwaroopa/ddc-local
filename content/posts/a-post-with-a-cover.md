@@ -1,5 +1,5 @@
 ---
-title: Sample post 1 - distributed data cloud
+title: Sample post 1 - distributed data cloud12
 date: 2019-01-07T00:00:00.000Z
 author: 8e0d3146-0c1d-43de-bd25-b1b3a32c26d2
 published: true
