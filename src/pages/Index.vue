@@ -168,6 +168,12 @@
     .results_title {
         padding: 30px;
     }
+    @media only screen and (max-width: 600px) {
+        .post-card__image {
+            height: auto !important;
+            width: 400px;
+        }
+    }
     .post-card__image {
         height: 320px;
         width: 400px;

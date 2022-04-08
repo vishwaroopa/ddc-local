@@ -269,7 +269,7 @@
                         <div class="flex flex-col md:flex-row max-w-1200 w-full mx-auto">
                             <a :href="edge.node.path" :to="edge.node.path" class="w-full md:w-1/3 mr-12">
                                 <div class="text-white">
-                                    <img class="featured_image" :src="`${edge.node.authorImage}`" style="width:250px;height:250px" />
+                                    <img class="featured_image" :src="`${edge.node.authorImage}`" style="width: 250px; height: 250px; margin: auto;" />
                                 </div>
                             </a>
                             <div class="w-full md:w-1/1">

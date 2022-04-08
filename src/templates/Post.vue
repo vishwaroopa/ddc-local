@@ -208,7 +208,14 @@ import BaseSection from "../components/BaseSection.vue";
 
         .post__content img {
             margin: auto;
-            max-width: 100%!important;
+            max-width: 100% !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .post-card__image {
+                height: auto !important;
+                width: 400px;
+            }
         }
 
         ul {
