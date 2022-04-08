@@ -3,10 +3,10 @@ title: The Distributed Cloud Requires a Distributed Data Platform
 date: 2022-04-08T06:04:35.687Z
 author: bfac0ff5-1b54-4810-87a9-551cc05b2a40
 published: true
-cover_image: ../../static/images/uploads/cover-iamge1.png
+cover_image: ../../static/images/uploads/ddc_article-1500x525-01.jpg
 categories:
   - cloud
-thumbnail_image: ../../static/images/uploads/thumbnail1.png
+thumbnail_image: ../../static/images/uploads/ddc_thumbnail-1000x800-01.jpg
 description: >-
   <!--StartFragment-->
 

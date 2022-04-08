@@ -208,6 +208,7 @@ import BaseSection from "../components/BaseSection.vue";
 
         .post__content img {
             margin: auto;
+            max-width: 100%!important;
         }
 
         ul {

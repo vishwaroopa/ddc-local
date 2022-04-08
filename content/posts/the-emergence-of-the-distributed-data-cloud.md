@@ -3,9 +3,10 @@ title: The Emergence of the Distributed Data Cloud
 date: 2022-04-08T06:35:13.431Z
 author: 008f1469-dd0b-40ec-8dc1-872dbe1005e1
 published: true
-cover_image: ../../static/images/uploads/alexandr-podvalny-220262-unsplash.jpg
+cover_image: ../../static/images/uploads/ddc_article-1500x525-02.jpg
 categories:
   - cloud
+thumbnail_image: ../../static/images/uploads/ddc_thumbnail-1000x800-02.jpg
 description: "Many companies today are running applications and storing data in
   a hybrid computing environment that spans on-premises, one or more clouds and
   the edge. "
