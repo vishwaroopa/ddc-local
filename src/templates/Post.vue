@@ -7,7 +7,9 @@
         line-height: 1.5;
         margin-bottom: 1.5rem;
     }
-
+        .post__content p:first-of-type {
+            font-size: 1.15em!important;
+        }
 </style>
 <template>
     <Layout>
@@ -223,7 +225,7 @@ import BaseSection from "../components/BaseSection.vue";
             }
 
             p {
-                font-size: 1.14em;
+                font-size: 1.15em;
                 color: var(--title-color);
             }
 
