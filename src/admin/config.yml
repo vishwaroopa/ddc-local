@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: yellowbrick-data/ddc
+  branch: main
+
+local_backend: true
+url: http://localhost:8081/api/v1
+use_graphql: true
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    media_folder: '/static/images/uploads'
+    public_folder: '../../static/images/uploads'
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: 'md'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: Author,  name: author, widget: relation, collection: authors,searchFields: [name], displayFields: [name], valueField: id}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
+      - {label: Categories, name: categories, widget: select, multiple: true, options: [{label: 'Cloud', value: 'cloud'}, {label: 'Product', value: 'product'}]}
+      - {label: "Thumbnail Image", name: "thumbnail_image", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  -
+    label: Authors
+    name: authors
+    folder: content/authors
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    media_folder: /static/uploads/authors
+    public_folder: /uploads/authors
+    fields:
+      - {label: ID, name: id, widget: id}
+      - {label: Author Name, name: name, widget: string}
+      - {label: Position, name: position, widget: string}
+      - {label: Author Image, name: authorImage, widget: image,media_folder: /static/uploads/authors,public_folder: /uploads/authors}
+      - {label: About Author, name: authorAbout, widget: markdown}
+      - {label: Created Date, name: date, widget: date}
+  -
+    label: "Pages"
+    name: "pages"
+    files:
+      -
+        label: "Home"
+        name: "home"
+        file:  "content/pages/home.yml"
+        fields:
+          -
+            label: "Hero Section "
+            name: "bannerHero"
+            widget: "object"
+            fields:
+              - {label: "Main Title", name: "title", widget: "string"}
+              - {label: "Main Title Color", name: "titleColor", widget: "select", options: [{label: White, value: 'text-white'}, {label: Blue, value: 'text-blue-700'}], default: [{label: White, value: 'text-white'}]}
+              - {label: "Sub Title", name: "subTitle", widget: "string"}
+              - {label: "Sub Title Color", name: "subTitleColor", widget: "select", options: [{label: White, value: 'text-white'}, {label: Blue, value: 'text-blue-700'}], default: [{label: White, value: 'text-white'}]}
+              - {label: "Url", name: "url", widget: "string"}
+              - {label: "Button Text", name: "learnMore", widget: "string"}
+              - {label: "Button color", name: learncolor", widget: "select", options: [{label: White, value: 'text-white'}, {label: Blue, value: 'text-blue-700'}], default: [{label: White, value: 'text-white'}]}
+              - {label: "Hero Background Image", name: "bgImage", widget: "image"}
+          -
+            label: "Banner Section"
+            name: "bannerSection"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Title Color", name: "titleColor", widget: "select", options: [{label: White, value: 'text-white'}, {label: Blue, value: 'text-blue-700'}], default: [{label: White, value: 'text-white'}]}
+              - {label: "Title Content", name: "body", widget: "markdown"}
+              - {label: "banner Background Image", name: "bnImage", widget: "image"}

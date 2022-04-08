@@ -1,0 +1,27 @@
+bannerHero:
+  learncolor": text-blue-700
+  subTitleColor: text-blue-700
+  titleColor: text-white
+  url: "#"
+  bgImage: /images/uploads/offer.png
+  title: The Distributed Data Cloud
+  subTitle: An emerging category in large-scale data management and analytics
+  learnMore: Learn More
+bannerSection:
+  title: Your Data Anywhere
+  titleColor: text-blue-700
+  titleContent: >-
+    Cloud complexity and diversity constrain business productivity. Data
+    management and analytics platforms should be deployable everywhere, at the
+    point of need.
+
+
+
+    - in the cloud, or on-premise.
+  bnImage: /images/uploads/banner.png
+  body: >-
+    Cloud complexity and diversity constrain business productivity. Data
+        management and analytics platforms should be deployable everywhere, at the
+        point of need.
+
+    \- in the cloud, or on-premise.
