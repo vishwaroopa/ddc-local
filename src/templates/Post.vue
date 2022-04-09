@@ -10,16 +10,19 @@
         .post__content p:first-of-type {
             font-size: 1.15em!important;
         }
+    .post_title {
+        font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
+    }
 </style>
 <template>
     <Layout>
        
 
         <div class="post-title">
-            <div class="uppercase max-w-1200 w-full mx-auto font-bold px-6 pt-32 mb:pt-8 title_post" >
+            <div class=" max-w-1200 w-full mx-auto px-6 pt-32 mb:pt-8" >
 
-                <h1 class="post-title__text  pb-6 font-semibold capitalize">
-                    <span class="text-xl" style="margin-top:20px">{{ $page.post.title }}</span>                <span style="float: right; " class="text-yellow1" v-for="(category) in $page.post.categories"><a :href="category.path" :to="category.path"  class="capitalize brighter-teal max-w-1200 w-full  font-bold inline"> {{category.title}}</a></span>
+                <h1 class="post-title__text  pb-6 ">
+                    <span class="post_title text-2xl font-semibold capitalise" style="margin-top:20px">{{ $page.post.title }}</span>                <span style="float: right; " class="text-yellow1" v-for="(category) in $page.post.categories"><a :href="category.path" :to="category.path"  class="capitalize brighter-teal max-w-1200 w-full  font-bold inline"> {{category.title}}</a></span>
                 </h1>
             </div>
             </div>

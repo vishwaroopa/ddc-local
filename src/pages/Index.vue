@@ -255,7 +255,7 @@
                                     <div class="flex">
                                         <div class="w-1/7 mr-6">
                                             <a :href="edge.node.author.path" :to="edge.node.author.path">
-                                                <img :src="`${edge.node.author.authorImage}`" style=" border-radius: 50%;width:70px;height:70px" class="w-16" />
+                                                <img :src="`${edge.node.author.authorImage}`" style=" border-radius: 50%;width:60px;height:60px" class="w-16" />
                                             </a>
                                         </div>
                                         <div class="md:w-2/3 authorname">

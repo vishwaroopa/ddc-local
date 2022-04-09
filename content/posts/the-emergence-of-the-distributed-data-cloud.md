@@ -1,7 +1,7 @@
 ---
 title: The Emergence of the Distributed Data Cloud
 date: 2022-04-08T06:35:13.431Z
-author: 008f1469-dd0b-40ec-8dc1-872dbe1005e1
+author: f23d6d6f-d0cb-444f-b23f-320bc84e6801
 published: true
 cover_image: ../../static/images/uploads/ddc_article-1500x525-02.jpg
 categories:

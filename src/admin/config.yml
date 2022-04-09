@@ -42,6 +42,10 @@ collections:
       - {label: Position, name: position, widget: string}
       - {label: Author Image, name: authorImage, widget: image,media_folder: /static/uploads/authors,public_folder: /uploads/authors}
       - {label: About Author, name: authorAbout, widget: markdown}
+      - {label: About Author/Fun/Interest, name: authorInterest, widget: markdown}
+      - {label: Author Experience, name: authorExperience, widget: markdown}
+      - {label: Twitter Profile URL, name: twitterUrl, widget: string, required: false}
+      - {label: Linkedin Profile URL, name: linkedinUrl, widget: string, required: false}
       - {label: Created Date, name: date, widget: date}
   -
     label: "Pages"

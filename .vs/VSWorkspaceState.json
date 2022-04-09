@@ -3,12 +3,13 @@
     "",
     "\\content",
     "\\src",
+    "\\src\\admin",
     "\\src\\components",
     "\\src\\layouts",
     "\\src\\pages",
     "\\src\\templates",
     "\\static"
   ],
-  "SelectedNode": "\\src\\components\\SearchBlog.vue",
+  "SelectedNode": "\\static\\config.yml",
   "PreviewInSolutionExplorer": false
 }

@@ -222,8 +222,12 @@
                     <h1 class="font-bold capitalize text-2xl pt-2 pb-2" v-html="$page.author.name" style="text-align:center" />
                     <p class="brighter-teal text-xl" v-html="$page.author.position" style="text-align: center; margin-bottom: 1.5rem; font-weight: 600;" />
                     <div class="font-normal" v-html="$page.author.authorAbout" /><br />
-                    <div class="font-normal" v-html="$page.author.authorInterest" />
+                    <div class="font-normal" v-html="$page.author.authorInterest" /><br/>
+                    <div class="font-normal" v-html="$page.author.authorExperience" />
+                    <p class="author-twitter"><a class="social" v-if="$page.author.twitterUrl != ''" target="_blank" :href="$page.author.twitterUrl"><span><img src="/uploads/twitter-author.png" /></span></a><a v-if="$page.author.linkedinUrl != ''" class="social" target="_blank" :href="$page.author.linkedinUrl"><span><img src="/uploads/linkedin-author.png" /></span></a></p>
+
                 </div>
+
 
             </div>
             <div id="current_post"></div>
@@ -359,7 +363,11 @@
     query Author($id: ID!) {
     author(id: $id) {
     name
-  authorAbout
+    authorAbout
+    authorInterest
+    authorExperience
+    twitterUrl
+    linkedinUrl
     authorImage
     position
     belongsTo  {
@@ -376,6 +384,10 @@
     author {
     name
     authorImage
+    authorInterest
+    authorExperience
+    twitterUrl
+    linkedinUrl
     path
     position
     }
