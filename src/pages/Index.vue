@@ -19,11 +19,14 @@
         margin-top: -100vh;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(45deg, red, blue);
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
+        position: -webkit-fixed; /* Safari */
+        position: fixed;
         top: 0;
-        z-index: 0;
+        background: linear-gradient(45deg, red, blue);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999 !important;
     }
 
     div.section-header {
@@ -46,7 +49,6 @@
         position: relative;
         background-color: white;
         width: 100%;
-        min-height: 100vh;
         z-index: 9999
     }
 
