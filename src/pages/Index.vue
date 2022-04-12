@@ -16,10 +16,8 @@
     }
 
     .sticky {
-        margin-top: -100vh;
         width: 100%;
         height: 100vh;
-        position: -webkit-fixed; /* Safari */
         position: fixed;
         top: 0;
         background: linear-gradient(45deg, red, blue);
