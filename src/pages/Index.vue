@@ -1,23 +1,49 @@
 <style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
     html,
     body {
+        min-height: 300%;
         width: 100%;
+        font-family: "Open sans", sans-serif;
+        font-size: 22px;
+        line-spacing: 44px;
         margin: 0;
         padding: 0;
         position: relative;
         z-index: 0;
     }
 
-    div.parallax-image1 {
+    div.parallax-image* {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         top: 0;
     }
 
+    div.parallax-image1 {
+        background-image: url(https://distributeddatacloud-dev.netlify.app/images/uploads/offer.png);
+    }
+
+    div.parallax-image2 {
+        background-image: url(https://source.unsplash.com/random/2300x1201/?cliff);
+    }
+
+    div.parallax-image3 {
+        background-image: url(https://source.unsplash.com/random/2401x1200/?rocks);
+    }
+
+    div.parallax-image4 {
+        background-image: url(https://source.unsplash.com/random/2001x1201/?hills);
+    }
+
     .sticky {
         margin-top: -100vh;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background: linear-gradient(45deg, red, blue);
         position: -webkit-sticky; /* Safari */
@@ -29,17 +55,20 @@
     div.section-header {
         position: relative;
         width: 100%;
-        height: auto;
+        height: 70vh;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
-        z-index: 9999;
+        z-index: 2
     }
 
     div.header-text {
         height: auto;
-        width: 100%;
+        padding: 0px 20px;
+        padding-left: calc(20vw - 70px);
+        margin-bottom: 40px;
         color: white;
+        background: rgba(16, 32, 48, 0.5)
     }
 
     div.section {
@@ -47,11 +76,22 @@
         background-color: white;
         width: 100%;
         min-height: 100vh;
+        padding: 3em calc(20vw - 70px);
         z-index: 1
     }
 
-    .backgroundparallax {
-        background-attachment: fixed;
+        div.section:last-child {
+            min-height: 50vh;
+            padding: 3em calc(20vw - 70px) 6em;
+        }
+
+        div.section.dark {
+            background-color: #102030;
+            color: white;
+        }
+
+    .page-title > div > h1 {
+        font-size: 80px;
     }
 
     .post-card__title:hover, .featured-author:hover, .menu-item:hover {
@@ -265,6 +305,32 @@
 </style>
 <template>
     <Layout>
+        <div class="parallax-image1 sticky page-title">
+        </div>
+        <div class="section-header page-title">
+            <div class="header-text">
+                <h1>Full Parallax for iOS</h1>
+                <h3>Displays properly on iPhone and iPad</h3>
+            </div>
+        </div>
+        <div class="section">
+            <p><h2>Is education residence conveying so so</h2>
+
+            <p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.</p>
+
+            <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p>
+
+            <p>New the her nor case that lady paid read. Invitation friendship travelling eat everything the out two. Shy you who scarcely expenses debating hastened resolved. Always polite moment on is warmth spirit it to hearts. Downs those still witty an balls so chief so. Moment an little remain no up lively no. Way brought may off our regular country towards adapted cheered.</p>
+
+            <p>Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. It abode wrong miles an so delay plate. She relation own put outlived may disposed.</p>
+
+            <p>Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom. Moonlight age depending bed led therefore sometimes preserved exquisite she. An fail up so shot leaf wise in. Minuter highest his arrived for put and. Hopes lived by rooms oh in no death house. Contented direction september but end led excellent ourselves may. Ferrars few arrival his offered not charmed you. Offered anxious respect or he. On three thing chief years in money arise of.p</p>
+        </div>
+
+
+
+
+
         <div class="parallax-image1 sticky page-title" :style="{
                 backgroundImage: `url(${$page.home.bannerHero.bgImage})`,
               }">
