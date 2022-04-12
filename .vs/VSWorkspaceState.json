@@ -3,13 +3,12 @@
     "",
     "\\content",
     "\\src",
-    "\\src\\admin",
-    "\\src\\components",
+    "\\src\\css",
     "\\src\\layouts",
     "\\src\\pages",
     "\\src\\templates",
     "\\static"
   ],
-  "SelectedNode": "\\static\\config.yml",
+  "SelectedNode": "\\src\\templates\\Post.vue",
   "PreviewInSolutionExplorer": false
 }

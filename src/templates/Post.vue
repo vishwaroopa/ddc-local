@@ -22,7 +22,7 @@
             <div class=" max-w-1200 w-full mx-auto px-6 pt-32 mb:pt-8" >
 
                 <h1 class="post-title__text  pb-6 ">
-                    <span class="post_title text-2xl font-semibold capitalise" style="margin-top:20px">{{ $page.post.title }}</span>                <span style="float: right; " class="text-yellow1" v-for="(category) in $page.post.categories"><a :href="category.path" :to="category.path"  class="capitalize brighter-teal max-w-1200 w-full  font-bold inline"> {{category.title}}</a></span>
+                    <span class=" text-xl font-semibold capitalise" style="margin-top:20px">{{ $page.post.title }}</span>                <span style="float: right; " class="text-yellow1" v-for="(category) in $page.post.categories"><a :href="category.path" :to="category.path"  class="capitalize brighter-teal max-w-1200 w-full  font-bold inline"> {{category.title}}</a></span>
                 </h1>
             </div>
             </div>
