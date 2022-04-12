@@ -14,7 +14,10 @@
         background-size: cover;
         top: 0;
     }
-
+    .footer1 {
+        position: relative;
+        z-index: 9999;
+    }
     .sticky {
         width: 100%;
         height: 100vh;

@@ -5,7 +5,7 @@
         <main class="main">
             <slot />
         </main>
- <section class="w-full py-4 text-gray-100 px-5 bg-black" data-v-a1c7cc20="">
+ <section class="w-full py-4 text-gray-100 px-5 bg-black footer1" data-v-a1c7cc20="">
                 <div class="w-full max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center" data-v-a1c7cc20="">
                     <p class="flex flex-col w-full sm:w-3/4 text-sm text-left sm:text-left mb-6 sm:mb-0" data-v-a1c7cc20="">&#169; 2022 Distributed Data Cloud. All rights reserved. </p>
                 </div>
