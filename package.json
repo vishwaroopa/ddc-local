@@ -29,7 +29,8 @@
     "tailwindcss": "^3.0.23",
     "tailwindcss-rfs": "^2.1.1",
     "typeface-source-sans-pro": "^0.0.75",
-    "uuid4": "^2.0.2"
+    "uuid4": "^2.0.2",
+    "vue-cookie-law": "1.13.3"
   },
   "engines": {
     "node": ">=12"
