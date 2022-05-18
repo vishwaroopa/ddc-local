@@ -40,6 +40,7 @@
         z-index: 9999;
     }
 
+
     div.header-text {
         height: auto;
         width: 100%;
@@ -235,7 +236,16 @@
         font-weight: 400;
         margin: 0px;
     }
-
+    .sticky1 {
+        
+        width: 100vw;
+        height: 30vh;
+        background: linear-gradient(45deg, red, blue);
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 9999 !important;
+    }
 
     .results_title {
         padding: 30px;
@@ -256,7 +266,9 @@
     .main {
         padding: 0 !important;
     }
-
+    div.parallax-image2 {
+        background-image: url('/images/uploads/banner.png');
+    }
     .main_section {
         background-repeat: no-repeat;
         background-size: cover;
@@ -295,15 +307,19 @@
                 <h1 class="banner_title text-center py-10 text-4xl font-semibold" :class="$page.home.bannerSection.titleColor || 'text-yellow1'">
                     {{ $page.home.bannerSection.title }}
                 </h1>
-                <div class="bg-container1 backgroundparallax" :style="{
-                backgroundImage: `url(${$page.home.bannerSection.bnImage})`,
-              }">
-                    <div class="p-6 w-full h-full layout_width text-center max-w-1200">
-                        <h2 class="text-white font-bold text-center banner_content" v-html="$page.home.bannerSection.body" />
-                    </div>
-                </div>
-            </div>
 
+            </div>
+        </div>
+        <div class="bg-container1 parallax-image2 sticky1">
+            
+        </div>
+        <div class="section-header1">
+            <div class="header-text">
+                <h2>USES POSITION:STICKY</h2>
+                <h3>on images which are hidden behind the solid panels</h3>
+            </div>
+        </div>
+        <div class="section">
             <section class="px-6 xl:px-0 pb-6 pt-20" id="current_post">
                 <div class="max-w-1200 w-full mx-auto">
                     <div class="flex flex-row flex-wrap -mx-6">
@@ -348,7 +364,7 @@
                 </div>
             </section>
         </div>
-
+        </div>
     </Layout>
 </template>
 <script>

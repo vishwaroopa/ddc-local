@@ -26,7 +26,7 @@
                                 <label aria-haspopup="true" class="w-full relative">
                                     <div class="flex flex-row items-center">
                                         <a href='/categories/' to="/categories" class="flex items-center cursor-pointer p-2 pl-6 cc:px-2 cc:py-2">Categories</a>
-                                        <span class="nav-arrow text-black" ></span>
+                                        <span class="nav-arrow text-black"></span>
                                     </div>
                                     <transition name="slider">
                                         <ul v-show='toggle' id="submenu" class="cc:absolute py-3 whitespace-no-wrap bg-yellow1 text-white min-w-full cc:min-w-200 rounded-sm submenu" aria-label="submenu">
@@ -63,7 +63,7 @@
                         </ul>
 
                     </div>
-                    <div id="mobile_search" ><img @click="searchClick" src="/uploads/icons/search-icon.svg" style="transform: rotate(-45deg); width: 25px; height: 25px; margin-top: 25px; margin-left: 20px; " /><span class="inline-block cursor-pointer pb-2"><search-blog1 class="text-transparent" /></span></div>
+                    <div id="mobile_search"><img @click="searchClick" src="/uploads/icons/search-icon.svg" style="transform: rotate(-45deg); width: 25px; height: 25px; margin-top: 25px; margin-left: 20px; " /><span class="inline-block cursor-pointer pb-2"><search-blog1 class="text-transparent" /></span></div>
                     <div class="cursor-pointer cc:hidden flex-1 flex items-center justify-end ml-8" @click="toggleDrawer(true)">
                         <button id="hamburger" aria-label="Show the menu">
                             <div class="line1"></div>
@@ -79,21 +79,35 @@
             <slot />
         </main>
 
-            <section class="w-full py-4 text-gray-100 px-5 bg-black footer1" data-v-a1c7cc20="">
-                <div class="w-full max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center" data-v-a1c7cc20="">
-                    <p class="flex flex-col w-full sm:w-3/4 text-sm text-left sm:text-left mb-6 sm:mb-0" data-v-a1c7cc20="">&#169; 2022 Distributed Data Cloud. All rights reserved. </p>
-                </div>
-            </section>
+        <section class="w-full py-4 text-gray-100 px-5 bg-black footer1" data-v-a1c7cc20="">
+            <div class="w-full max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center" data-v-a1c7cc20="">
+                <p class="flex flex-col w-full sm:w-3/4 text-sm text-left sm:text-left mb-6 sm:mb-0" data-v-a1c7cc20="">&#169; 2022 Distributed Data Cloud. All rights reserved. </p>
+            </div>
+        </section>
+        <section>
+            <div class="max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center">
+                <cookie-law>
+                    <div slot-scope="props" class="max-w-1200 mx-auto">
+
+                        By continuing to use this website, you consent to the use of cookies in accordance with our  <span class="bold underline cookie_terms"><a href="/terms">Cookie Policy</a></span>.
+
+                        <button style="margin-left:20px" class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.accept"><span>Accept All Cookies</span></button><button class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.close"><span>Ignore me</span></button>
+                    </div>
+
+                </cookie-law>
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
-
+    import CookieLaw from 'vue-cookie-law'
 export default {
   props: {
   },
-  components: {
-  }
+        components: {
+            CookieLaw
+        },
 }
 </script>
 
