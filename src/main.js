@@ -9,5 +9,12 @@ import './index.css'
 export default function (Vue, { router, head, isClient }) {
   
   // Set default layout as a global component
+  let username = document.cookie.indexOf('analytics=');
+        if (username != -1) {
+            window['ga-disable-UA-100388653-1'] = true; // enter your tracking ID
+            window['ga-disable-G-YBP5HZ98RC'] = true;
+            window['ga-disable-UA-8394889-6'] = true;
+        }
   Vue.component('Layout', DefaultLayout)
+  
 }
