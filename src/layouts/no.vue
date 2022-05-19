@@ -31,6 +31,18 @@
 <script>
 
     export default {
+    created() {
+            let username = document.cookie.indexOf('analytics=');
+            if (username != -1) {
+                alert("sa");
+                window['ga-disable-UA-100388653-1'] = true; // enter your tracking ID
+                window['ga-disable-G-YBP5HZ98RC'] = true;
+                window['ga-disable-UA-8394889-6'] = true;
+            }
+            else {
+                alert("dsd");
+            }
+        },
         props: {
         },
         components: {
