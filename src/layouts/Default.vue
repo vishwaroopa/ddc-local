@@ -311,6 +311,7 @@ a:hover {
             }
         },
         created() {
+        if (this.$isServer) {
             let username = document.cookie.indexOf('analytics=');
             if (username != -1) {
                 alert("sa");
@@ -320,6 +321,7 @@ a:hover {
             }
             else {
                 alert("dsd");
+            }
             }
         },
         mounted() {
