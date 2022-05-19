@@ -9,7 +9,7 @@ import './index.css'
 export default function (Vue, { router, head, isClient }) {
   
   // Set default layout as a global component
-   if(process.client) {
+   if(isClient) {
      let username = document.cookie.indexOf('analytics=');
         if (username != -1) {
           alert("ds");
