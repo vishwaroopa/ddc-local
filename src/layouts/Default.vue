@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-    <!-- Start cookieyes banner -->
-    <script id="cookieyes" type="application/javascript" src="https://cdn-cookieyes.com/client_data/fa0f9f18003897d4381a8b28/script.js"></script>
-    <!-- End cookieyes banner --> 
+   
         <header id="topnav" class="fixed flex flex-row cc:flex-col z-50 items-center w-full bg-white">
             <nav role="navigation" class="flex flex-col items-center space-between max-w-1200 mx-auto w-full px-5 py-0 cc:py-0">
 
