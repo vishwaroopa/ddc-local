@@ -5,6 +5,9 @@
         <main class="main">
             <slot />
         </main>
+        <!-- Start cookieyes banner -->
+    <script id="cookieyes" type="application/javascript" src="https://cdn-cookieyes.com/client_data/fa0f9f18003897d4381a8b28/script.js"></script>
+    <!-- End cookieyes banner --> 
         <section class="w-full py-4 text-gray-100 px-5 bg-black footer1" data-v-a1c7cc20="">
             <div class="w-full max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center" data-v-a1c7cc20="">
                 <p class="flex flex-col w-full sm:w-3/4 text-sm text-left sm:text-left mb-6 sm:mb-0" data-v-a1c7cc20="">&#169; 2022 Distributed Data Cloud. All rights reserved. </p>
@@ -12,17 +15,7 @@
         </section>
         <section>
             <div class="max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center">
-                <ClientOnly>
-                    <cookie-law>
-                        <div slot-scope="props" class="max-w-1200 mx-auto">
-
-                            By continuing to use this website, you consent to the use of cookies in accordance with our  <span class="bold underline cookie_terms"><a href="/terms">Cookie Policy</a></span>.
-
-                            <button style="margin-left:20px" class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.accept"><span>Accept All Cookies</span></button><button class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.close"><span>Ignore me</span></button>
-                        </div>
-
-                    </cookie-law>
-                </ClientOnly>
+               
             </div>
         </section>
     </div>
