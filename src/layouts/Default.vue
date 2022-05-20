@@ -88,17 +88,7 @@
         </section>
         <section>
             <div class="max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center">
-                <ClientOnly>
-                    <cookie-law>
-                        <div slot-scope="props" class="max-w-1200 mx-auto">
 
-                            By continuing to use this website, you consent to the use of cookies in accordance with our  <span class="bold underline cookie_terms"><a href="/terms">Cookie Policy</a></span>.
-
-                            <button style="margin-left:20px" class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.accept"><span>Accept All Cookies</span></button><button class="skew button button-sm yellow mx-0 px-4 lg:px-5" @click="props.close"><span>Ignore me</span></button>
-                        </div>
-
-                    </cookie-law>
-                    </ClientOnly>
 </div>
         </section>
     </div>
@@ -312,20 +302,7 @@ a:hover {
                 
             }
         },
-        created() {
-        if (this.$isServer) {
-            let username = document.cookie.indexOf('analytics=');
-            if (username != -1) {
-                alert("sa");
-                window['ga-disable-UA-100388653-1'] = true; // enter your tracking ID
-                window['ga-disable-G-YBP5HZ98RC'] = true;
-                window['ga-disable-UA-8394889-6'] = true;
-            }
-            else {
-                alert("dsd");
-            }
-            }
-        },
+        
         mounted() {
             var element = document.getElementById('submenu');
 
