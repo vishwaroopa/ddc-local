@@ -6,8 +6,7 @@
             <slot />
         </main>
         <!-- Start cookieyes banner -->
-    <script id="cookieyes" type="application/javascript" src="https://cdn-cookieyes.com/client_data/fa0f9f18003897d4381a8b28/script.js"></script>
-    <!-- End cookieyes banner --> 
+        <script id="cookieyes" type="application/javascript" src="https://cdn-cookieyes.com/client_data/fa0f9f18003897d4381a8b28/script.js"></script> <!-- End cookieyes banner -->
         <section class="w-full py-4 text-gray-100 px-5 bg-black footer1" data-v-a1c7cc20="">
             <div class="w-full max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center" data-v-a1c7cc20="">
                 <p class="flex flex-col w-full sm:w-3/4 text-sm text-left sm:text-left mb-6 sm:mb-0" data-v-a1c7cc20="">&#169; 2022 Distributed Data Cloud. All rights reserved. </p>
@@ -15,7 +14,7 @@
         </section>
         <section>
             <div class="max-w-1200 mx-auto flex flex-row flex-wrap justify-between items-center">
-               
+
             </div>
         </section>
     </div>
